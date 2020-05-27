@@ -1,0 +1,45 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+$mainFamily: 'PT Sans'
+$poppins: 'Poppins'
+
+=fmain
+	font-family: $mainFamily, Arial, sans-serif
+=ftitle
+	font-family: $poppins, Arial, sans-serif
+
+@font-face
+	+fontdefault(normal, 400, $mainFamily)
+	+fontpath('PT Sans', 'PTSans-Regular', PTSans-Regular)
+@font-face
+	+fontdefault(italic, 400, $mainFamily)
+	+fontpath('PT Sans Italic', 'PTSans-Italic', PTSans-Italic)
+
+@font-face
+	+fontdefault(normal, 700, $mainFamily)
+	+fontpath('PT Sans Bold', 'PTSans-Bold', PTSans-Bold)
+@font-face
+	+fontdefault(italic, 700, $mainFamily)
+	+fontpath('PT Sans Bold Italic', 'PTSans-BoldItalic', PTSans-BoldItalic)
+
+
+
+@font-face
+	+fontdefault(normal, 700, $poppins)
+	+fontpath('Poppins-Bold', 'Poppins-Bold', Poppins-Bold)
+@font-face
+	+fontdefault(italic, 700, $poppins)
+	+fontpath('Poppins Bold Italic', 'Poppins-BoldItalic', Poppins-BoldItalic)
+
+@font-face
+	+fontdefault(normal, 800, $poppins)
+	+fontpath('Poppins Extra Bold', 'Poppins-ExtraBold', Poppins-ExtraBold)
+@font-face
+	+fontdefault(italic, 800, $poppins)
+	+fontpath('Poppins Extra Bold alic', 'Poppins-ExtraBoldItalic', Poppins-ExtraBoldItalic)
