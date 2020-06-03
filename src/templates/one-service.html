@@ -1,0 +1,77 @@
+---
+title: One service
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	<div class="oneservice">
+		<div class="oneservice__top">
+			<div class="oneservice__bg">
+				<img src="./img/oneservice-bg.jpg" alt="img">
+			</div>
+			<div class="oneservice__inner inner">
+				<div class="oneservice__row">
+					<div class="oneservice__left"></div>
+					<div class="oneservice__right">
+						<h1 class="oneservice__titlelg titlelg">Private<span class="colorblue">training</span></h1>
+						<ul class="oneservice__items">
+							<li class="oneservice__item">
+								<div class="oneservice__icon">
+								<img src="./img/tools-and-utensils.svg" alt="img"></div>
+								<div class="oneservice__name">Pro</div>
+								<p>Level</p>
+							</li>
+							<li class="oneservice__item">
+								<div class="oneservice__icon">
+								<img src="./img/time.svg" alt="img"></div>
+								<div class="oneservice__name">2 hours</div>
+								<p>Time</p>
+							</li>
+							<li class="oneservice__item">
+								<div class="oneservice__icon">
+									<img src="./img/calendar.svg" alt="img"></div>
+								<div class="oneservice__name">Everyday</div>
+								<p>Schedule</p>
+							</li>
+						</ul>
+						<div class="oneservice__footer">
+							<a href="#" class="btn">Book now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="oneservice__bottom">
+			<div class="oneservice__inner inner">
+				<div class="oneservice__row">
+					<div class="oneservice__left">
+						<div class="oneservice__fitnesscoach fitnesscoach">
+							<div class="fitnesscoach__img">
+								<img src="./img/fitnesscoach.jpg" alt="img">
+							</div>
+							<div class="fitnesscoach__wrap">
+								<div class="fitnesscoach__arr"></div>
+								<div class="fitnesscoach__name">James <br>McGregor</div>
+								<div class="fitnesscoach__position">Fitness coach</div>
+							</div>
+						</div>
+					</div>
+					<div class="oneservice__right">
+						<blockquote class="oneservice__blockquote">I would of never thought that after such a short time training with you, I would of felt that good and strong.</blockquote>
+						<p>Not only that just your smile and personality are electric and dynamic enough. But you listen, you help, and give great advice You are so young but yet so mature.</p>
+						<div class="oneservice__author">
+							<div class="oneservice__authorname">Julie Papineau</div>
+							<p>Six months of training</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include "partials/_gen.html" %}
+	{% include "partials/_askform.html" %}
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

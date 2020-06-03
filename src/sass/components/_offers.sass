@@ -1,0 +1,140 @@
+.offers
+	&__title
+		margin-bottom: 20px
+	&__row
+		position: relative
+		counter-reset: list
+		&:before
+			position: absolute
+			content: ''
+			top: -1px
+			left: -150px
+			right: -150px
+			border-top: 1px solid rgba($white, .1)
+		&:not(:first-child)
+			margin-top: 70px
+	&__col
+		position: relative
+		padding: 60px 80px 100px
+		justify-content: space-between
+		flex-direction: column
+		display: flex
+		+md
+			padding: 70px 37px
+			width: 33.3%
+		+hover
+			.offers__btn
+				opacity: 0
+				visibility: hidden
+			.offers__btnonhover
+				opacity: 1
+				visibility: visible
+			.offers__img
+				opacity: 1
+				visibility: visible
+		&:not(:first-child)
+			border-left: 1px solid rgba($white, .1)
+			+sm
+				border: none
+		&:first-child
+			width: 31.835%
+			padding-left: 15px
+			padding-right: 95px
+			+md
+				padding: 70px 37px
+				width: 33.3%
+			+sm
+				width: 100%
+			.offers__img
+				left: -150px
+				+md
+					left: -37px
+		&:nth-child(2)
+			width: 36.33%
+			+md
+				width: 33.3%
+			+sm
+				width: 100%
+		&:last-child
+			width: 31.835%
+			padding-right: 15px
+			padding-left: 95px
+			+md
+				padding: 70px 37px
+				width: 33.3%
+			+sm
+				width: 100%
+			.offers__img
+				right: -150px
+				+md
+					right: -37px
+	&__wrap
+		position: relative
+		z-index: 2
+		&:before
+			margin-bottom: 30px
+			counter-increment: list
+			content: '0'counter(list)
+			+f(32px,800,1.1875)
+			opacity: .2
+			+ftitle
+			display: block
+	&__img
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		opacity: 0
+		visibility: hidden
+		+tr(opacity, visibility)
+		background-color: $blue
+		+md
+			display: none
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			object-position: center
+			display: block
+			opacity: .12
+	&__titlesm
+		margin-bottom: 30px
+	&__text
+		margin-bottom: 18px
+		+f(10px,700,1.3)
+		color: $white
+		letter-spacing: 0.1em
+		text-transform: uppercase
+	&__list
+		line-height: 1.28
+		li
+			position: relative
+			padding-left: 10px
+			display: block
+			&:before
+				position: absolute
+				content: ''
+				top: 7px
+				left: 0
+				+circle(3)
+				background-color: $white
+			&:not(:last-child)
+				margin-bottom: 15px
+	&__footer
+		position: relative
+		margin-top: 50px
+		z-index: 2
+	&__btn
+		+tr(opacity,visibility)
+	&__btnonhover
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+		+tr(opacity,visibility)
+		opacity: 0
+		visibility: hidden
+		+md
+			visibility: visible
+			opacity: 1

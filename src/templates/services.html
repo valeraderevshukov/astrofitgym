@@ -1,0 +1,55 @@
+---
+title: Services
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	<div class="wrap">
+		<div class="inner">
+			<div class="services">
+				<h1 class="services__titlelg titlelg text-center">Services</h1>
+				<div class="service">
+					<div class="service__img">
+						<img src="./img/service-img-1.jpg" alt="img">
+					</div>
+					<div class="service__content">
+						<h2 class="service__title title">Private<span class="colorblue">training</span></h2>
+						<div class="service__text">If you’re more of a lone wolf, our personal trainers will take good care of you during our private, one-on-one training sessions!</div>
+						<div class="service__footer">
+							<a href="#" class="btn">Book</a>
+						</div>
+					</div>
+				</div>
+				<div class="service">
+					<div class="service__content">
+						<h2 class="service__title title">Semi-private<span class="colorblue">training</span></h2>
+						<div class="service__text">Our semi-private sessions will help you reach your goals in an environment that’s motivating and fun!</div>
+						<div class="service__footer">
+							<a href="#" class="btn">Book</a>
+						</div>
+					</div>
+					<div class="service__img">
+						<img src="./img/service-img-2.jpg" alt="img">
+					</div>
+				</div>
+				<div class="service">
+					<div class="service__img">
+						<img src="./img/service-img-3.jpg" alt="img">
+					</div>
+					<div class="service__content">
+						<h2 class="service__title title">Nutrition<span class="colorblue">guidance</span></h2>
+						<div class="service__text">Results start in the kitchen! Learn how to eat well for your goals, with or without a meal plan. Create a healthy lifestyle that brings you results, in the kitchen as well as in the gym!</div>
+						<div class="service__footer">
+							<a href="#" class="btn">Book</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include "partials/_askform.html" %}
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

@@ -1,0 +1,141 @@
+.article
+	margin: 0 auto
+	max-width: 730px
+	color: $black
+	&:not(:last-child)
+		margin-bottom: 70px
+	p
+		&:not(:last-child)
+			margin-bottom: 20px
+	img
+		display: block
+		max-width: 100%
+		&:not(:last-child)
+			margin-bottom: 30px
+		&:not(:first-child)
+			margin-bottom: 30px
+	.img-lg
+		margin-left: -190px
+		margin-right: -190px
+		max-width: calc(100% + 380px)
+		+md
+			margin-left: -37px
+			margin-right: -37px
+			max-width: calc(100% + 74px)
+	h1,
+	h2,
+	h3,
+	h4,
+	h5
+		+ftitle
+		+sm
+			br
+				display: none
+	h1
+		+f(52px,700,1)
+		+md
+			font-size: 32px
+		&:not(:last-child)
+			margin-bottom: 10px
+		&:not(:first-child)
+			margin-bottom: 10px
+	h2
+		+f(32px,800,1.1875)
+		+sm
+			font-size: 24px
+		&:not(:last-child)
+			margin-bottom: 30px
+		&:not(:first-child)
+			margin-bottom: 30px
+	h3
+		+f(26px,800,1.35)
+		+sm
+			font-size: 18px
+		&:not(:last-child)
+			margin-bottom: 30px
+		&:not(:first-child)
+			margin-bottom: 30px
+	h4
+		+f(16px,800,1.5)
+		&:not(:last-child)
+			margin-bottom: 30px
+		&:not(:first-child)
+			margin-bottom: 20px
+	h5
+		+f(14px,800,1.5)
+		&:not(:last-child)
+			margin-bottom: 20px
+		&:not(:first-child)
+			margin-bottom: 20px
+	h6
+		+f(18px,700,1.5)
+		&:not(:last-child)
+			margin-bottom: 20px
+		&:not(:first-child)
+			margin-bottom: 20px
+	ul
+		padding-left: 30px
+		&:not(:last-child)
+			margin-bottom: 20px
+		&:not(:first-child)
+			margin-bottom: 20px
+		li
+			&:not(:last-child)
+				margin-bottom: 15px
+	a:not(.category):not(.article__link)
+		border-bottom: 1px solid
+		color: currentColor
+		+tr(border-color)
+		+hover
+			border-color: transparent
+	&__categories
+		margin: 52px 0 -20px
+	&__footer
+		margin-top: 50px
+		justify-content: space-between
+		display: flex
+	&__prev,
+	&__next
+		max-width: 50%
+	&__next
+		text-align: right
+	&__info
+		text-transform: uppercase
+		letter-spacing: 0.12em
+		color: rgba($black, .75)
+		+f(12px,400,2)
+	&__link
+		+f(16px,800,2)
+		+ftitle
+		color: currentColor
+		+tr(color)
+		border: none
+		display: block
+		+hover
+			color: $blue
+		+sm
+			br
+				display: none
+	&__description
+		color: rgba($black, .75)
+		&:not(:last-child)
+			margin-bottom: 20px
+
+.date
+	margin-bottom: 20px
+	opacity: .75
+	text-transform: uppercase
+.category
+	margin-bottom: 20px
+	padding: 10px 13px
+	text-transform: uppercase
+	color: $blue
+	line-height: 1.5
+	vertical-align: top
+	display: inline-block
+	background-color: rgba(#C4C4C4, .2)
+	+tr(opacity)
+	+hover
+		opacity: .7
+	&:not(:last-child)
+		margin-right: 20px

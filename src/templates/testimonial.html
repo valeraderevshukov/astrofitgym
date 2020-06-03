@@ -1,0 +1,117 @@
+---
+title: Testimonials
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	<div class="wrap">
+		<div class="inner">
+			<div class="testimonials">
+				<h1 class="testimonials__titlelg titlelg text-center">Testimonials</h1>
+				<div class="testimonials__inner">
+					<div class="testimonials__out">
+						<div class="testimonials__row row">
+							<div class="testimonials__colleft">
+								<h2 class="testimonials__titlesm titlesm">A relationship built on <span class="colorblue inline">trust</span></h2>
+								<div class="testimonials__footer sm-hide">
+									<a href="#" class="btn">Book</a>
+								</div>
+							</div>
+							<div class="testimonials__colright">
+								<p>At Astrofit, everybody is family. We build relationships based on trust and respect. Our personal trainers take their clients’ success and wellbeing to heart. It’s no longer just a client-trainer relationship: it’s family.</p>
+								<p>This unique relationship helps make the journey towards optimal health much easier, as clients are able and comfortable enough to open up to their trainers about the mishaps throughout the fitness journey.</p>
+								<div class="testimonials__footer sm-show">
+									<a href="#" class="btn">Book</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testimonials__siiderwrap js-testimonials-slider-wrap">
+						<div class="testimonials__siider js-testimonials-slider">
+							{% for item in range(0,4) %}					    
+							<div class="testimonials__slide">
+								<div class="testimonials__siideinner">
+									<div class="testimonials__colleft">
+										<div class="testimonials__img">
+											<img src="./img/testimonials-img.jpg" alt="img">
+										</div>
+									</div>
+									<div class="testimonials__content">
+										<div class="testimonials__contentinner">
+											<blockquote class="testimonials__blockquote">Almost 3 months ago I had zero energy. Zero strength. Zero motivation. Until I met you. Your energy and your “Let’s go, you can do it” are contagiousâ€¦</blockquote>
+											<strong class="testimonials__tagline">I would of never thought that after such a short time training with you, I would of felt that good and strong.</strong>
+											<p>Not only that just your smile and personality are electric and dynamic enough. But you listen, you help, and give great advice You are so young but yet so mature. I know I’m in good hands with you!!! For you, it’s your job and your passion, but you don’t realise that you are changing my life at the same time.</p>
+											<div class="testimonials__footer">
+												<div class="testimonials__author">
+													<div class="testimonials__authorname">Julie Papineau</div>
+													<p>Six months of training</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+						<div class="testimonials__slidercontroll">
+							<button class="testimonials__btnleft js-testimonials-slider-btn-left" type="button">{{ mixins.icon('switch') }}</button>
+							<div class="testimonials__counter js-testimonials-slider-counter"></div>
+							<button class="testimonials__btnright js-testimonials-slider-btn-right" type="button">{{ mixins.icon('switch') }}</button>
+						</div>
+					</div>
+					<div class="testimonials__out">
+						<div class="testimonials__row row js-progressslider-wrap">
+							<div class="testimonials__colleft">
+								<div class="testimonials__container">
+									<div class="testimonials__wrap">
+										<h2 class="testimonials__titlesm titlesm">Real<span class="colorblue">progress</span></h2>
+										<p>With the coach knowing when and how the journey derailed, he/she can fix it right away, thus helping the client get back on track faster and minimizing damages! At Astrofit, w’re here to help. Not judge. You’re human, we get it. So are we.</p>
+									</div>
+									<div class="testimonials__controll">
+										<div class="testimonials__counter js-progressslider-counter"></div>
+										<button class="testimonials__btnleft js-progressslider-btn-left" type="button">{{ mixins.icon('switch') }}</button>
+										<button class="testimonials__btnright js-progressslider-btn-right" type="button">{{ mixins.icon('switch') }}</button>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__colright">
+								<div class="testimonials__progress progressslider js-progressslider">
+									{% for item in range(0,4) %}	
+									<div class="progressslider__slide"><div><img src="./img/progressslider-img-1.jpg" alt="img"></div></div>
+									<div class="progressslider__slide"><div><img src="./img/progressslider-img-2.jpg" alt="img"></div></div>
+									{% endfor %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="ourclients">
+						<div class="ourclients__out">
+							<h3 class="ourclients__title titlesm">Hear what our <br><span class="colorblue inline">clients</span> are saying</h3>
+						</div>
+						<div class="ourclients__row row">
+							{% for item in range(0,4) %}
+							<div class="ourclients__col col col col-6 col-sm-12">
+								<a href="#" class="ourclients__fitnesscoach fitnesscoach">
+									<div class="fitnesscoach__img">
+										<img src="./img/fitnesscoach.jpg" alt="img">
+									</div>
+									<div class="fitnesscoach__wrap">
+										<div class="fitnesscoach__arr"></div>
+										<div class="fitnesscoach__name">James <br>McGregor</div>
+										<div class="fitnesscoach__position">Fitness coach</div>
+									</div>
+								</a>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	{% include "partials/_askform.html" %}
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

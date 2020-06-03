@@ -1,0 +1,92 @@
+---
+title: Blog
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	<div class="whitewrap color-black">
+		<div class="inner">
+			<div class="blog">
+				<h1 class="blog__titlelg titlelg text-center">Blog</h1>
+				<div class="blog__row row">
+					<div class="blog__col col col-12">
+						<div class="cardlg" style="background-image: url(./img/cardlg-bg.jpg);">
+							<div class="cardlg__date">MAY 5, 2020</div>
+							<a href="#" class="cardlg__titlesm titlesm color-white">Comment améliorer sa posture pour le travail de bureau?</a>
+							<p>Written by Editor in <a href="#">how-to, science, tips</a></p>
+						</div>
+					</div>
+					<div class="blog__col col col-4 col-sm-12">
+						<div class="card">
+							<div class="card__img">
+								<img src="./img/card-img-1.jpg" alt="img">
+							</div>
+							<a href="#" class="card__titlesm titlesm">Quick & Easy Berry Oat Bars Recipe</a>
+							<div class="card__tags">
+								<a href="#" class="tag">RECIPES</a>
+							</div>
+							<p>Nothing like a fruity, snack bar to get us in the mood for summer. These berry oat bars are easy to make, require little time, and just a few ingredients. They are vegan-friendly, macro-friendly, and delicious to the taste.</p>
+						</div>
+					</div>
+					<div class="blog__col col col-8 col-sm-12">
+						<div class="card">
+							<div class="card__img">
+								<img src="./img/card-img-2.jpg" alt="img">
+							</div>
+							<a href="#" class="card__titlesm titlesm">The Key to Reaching Success in Your Fitness Journey</a>
+							<div class="card__tags">
+								<a href="#" class="tag">FEATURES</a>,
+								<a href="#" class="tag">TIPS</a>
+							</div>
+							<p>As coaches, we get a lot of questions in regards to fitness and health. One question that comes very often with most of our clients is “how can I reach my goal?” followed by questions on different popular ways to reach said goal. There are many ways to reach one’s fitness goal, whether that is to increase strength, lose body fat, improve performance, or gain mass. As long as you’re consistent, the sky’s the limit.</p>
+						</div>
+					</div>
+					<div class="blog__col col col-4 col-sm-12">
+						<div class="card">
+							<div class="card__img">
+								<img src="./img/card-img-3.jpg" alt="img">
+							</div>
+							<a href="#" class="card__titlesm titlesm">The Importance of Rest Days</a>
+							<div class="card__tags">
+								<a href="#" class="tag">FEATURES</a>
+							</div>
+							<p>As athletes, we like pushing our limits every day; whether that means jumping a little higher or running a little longer, we like feeling accomplished athletically at the end of the day. We are also very competitive.</p>
+						</div>
+					</div>
+					<div class="blog__col col col-4 col-sm-12">
+						<div class="card">
+							<div class="card__img">
+								<img src="./img/card-img-4.jpg" alt="img">
+							</div>
+							<a href="#" class="card__titlesm titlesm">Comment améliorer sa posture pour le travail de bureau?</a>
+							<div class="card__tags">
+								<a href="#" class="tag">HOW-TO</a>,
+								<a href="#" class="tag">SCIENCE</a>,
+								<a href="#" class="tag">TIPS</a>
+							</div>
+							<p>Beaucoup d’entre vous travaillez à temps plein, sur une chaise, dans un bureau.  Tous les  matins, vous vous dites: il faudrait vraiment que je commence à faire de l’exercice pour renforcer mon cou et avoir une meilleur posture.</p>
+						</div>
+					</div>
+					<div class="blog__col col col-4 col-sm-12">
+						<div class="card">
+							<div class="card__img">
+								<img src="./img/card-img-5.jpg" alt="img">
+							</div>
+							<a href="#" class="card__titlesm titlesm">Should You Workout in the Morning or Evening</a>
+							<div class="card__tags">
+								<a href="#" class="tag">SCIENCE</a>,
+								<a href="#" class="tag">TIPS</a>
+							</div>
+							<p>There is a lot of debate on when is the right time to workout: morning workout or evening workout? The ones who’ve already benefitted from the early morning workouts are keen to say that 6AM workouts are best.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include "partials/_askform.html" %}
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

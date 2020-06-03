@@ -1,1 +1,93 @@
-<p>Hello from partials/_header.html</p>
+<!-- begin header -->
+<div class="header js-header">
+	<div class="header__inner inner">
+		<a href="/" class="header__moblogo logo md-show">
+			<img src="./img/logo.png" alt="img">
+		</a>
+		<div class="header__top md-hide">
+			<div class="header__left">
+				<ul class="lang">
+					<li><a href="#">Français</a></li>
+					<li class="is-active"><a href="#">English</a></li>
+				</ul>
+			</div>
+			<div class="header__right">
+				<a href="tel:450-232-5742" class="phone header__item">450-232-5742</a>
+				<a href="#" class="btn-simple btn-simple_sm header__item">Write to us</a>
+				<a href="#" class="btn btn_sm header__item">Become a member</a>
+			</div>
+		</div>
+		<div class="header__bottom md-hide">
+			<div class="header__left">
+				<a href="/" class="logo">
+					<img src="./img/logo.png" alt="img">
+				</a>
+			</div>
+			<div class="header__right">
+				<ul class="header__menu menu">
+					<li class="menu__item is-active"><a href="#" class="menu__link">Services</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Coaches</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Testimonials</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+				</ul>
+				<ul class="header__menu menu">
+					<li class="menu__item"><a href="#" class="menu__link">Schedule & location</a></li>
+				</ul>
+			</div>
+		</div>
+		<button class="header__btn btn-menu js-btn-menu md-show">
+			<span class="btn-menu__line"></span>
+			<span class="btn-menu__line"></span>
+			<span class="btn-menu__line"></span>
+		</button>
+
+		<div class="header__mob">
+			<div class="header__mobwrap">
+				<div class="header__mobtop">
+					<div class="header__mobcol">
+						<ul class="menu">
+							<li class="menu__item is-active"><a href="#" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Coaches</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Testimonials</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+						</ul>
+					</div>
+					<div class="header__mobcol text-right">
+						<ul class="lang">
+							<li><a href="#">Français</a></li>
+							<li class="is-active"><a href="#">English</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__mobmiddle">
+					<div class="header__mobrow">
+						<div class="header__mobcol">
+							<ul class="header__menu menu">
+								<li class="menu__item"><a href="#" class="menu__link">Schedule <br>& location</a></li>
+							</ul>
+						</div>
+						<div class="header__mobcol">
+							<a href="tel:450-232-5742" class="phone">450-232-5742</a>
+							<a href="#" class="btn-simple btn-simple_sm">Write to us</a>
+						</div>
+					</div>
+					<div class="header__mobrow">
+						<div class="header__mobcolcenter">
+							<a href="#" class="btn btn_sm">Become a member</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__mobfooter">
+				<ul class="soc">
+					<li><a href="#">{{ mixins.icon('fb') }}</a></li>
+					<li><a href="#">{{ mixins.icon('inst') }}</a></li>
+					<li><a href="#">{{ mixins.icon('youtube') }}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end header -->

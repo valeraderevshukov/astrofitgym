@@ -1,0 +1,65 @@
+.services
+	padding-bottom: 100px
+	+sm
+		padding-bottom: 0
+	&__titlelg
+		margin-bottom: 70px
+		+sm
+			margin-bottom: 62px
+.service
+	display: flex
+	+sm
+		position: relative
+		padding: 70px 0
+		display: block
+	&:not(:last-child)
+		margin-bottom: 70px
+		+sm
+			margin-bottom: 0
+	&__img
+		margin-right: -157px
+		flex-grow: 1
+		+md
+			margin-right: -67px
+		+sm
+			position: absolute
+			top: 0
+			left: -37px
+			right: -37px
+			bottom: 0
+			margin: 
+		img
+			max-width: 100%
+			display: block
+			+sm
+				width: 100%
+				height: 100%
+				object-fit: cover
+				object-position: left
+				opacity: .7
+	&__content
+		position: relative
+		padding: 70px 0 0 90px
+		width: 530px
+		flex-shrink: 0
+		z-index: 1
+		+md
+			padding: 70px 0 0
+			width: 55%
+		+sm
+			padding: 0
+			width: 100%
+		& + .service__img
+			margin: 0 0 0 -157px
+			+md
+				margin-left: -67px
+			+sm
+				margin: 0
+	&__title
+		margin-bottom: 30px
+	&__text
+		max-width: 330px
+		+sm
+			max-width: 300px
+	&__footer
+		margin-top: 62px

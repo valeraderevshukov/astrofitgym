@@ -1,0 +1,125 @@
+.oneservice
+	&__top
+		padding: 379px 0 100px
+		position: relative
+		+sm
+			padding: 400px 0 70px
+	&__bg
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		img
+			width: 100%
+			height: 100%
+			opacity: .5
+			object-fit: cover
+			object-position: center
+			+sm
+				object-position: 70% center
+	&__inner
+		position: relative
+		align-items: 1px
+	&__row
+		display: flex
+		+sm
+			flex-direction: column
+	&__left
+		width: 59.9%
+		padding-right: 30px
+		+sm
+			padding-right: 0
+			width: 100%
+	&__right
+		width: 40.1%
+		+sm
+			width: 100%
+	&__titlelg
+		margin-bottom: 5px
+		+sm
+			margin-bottom: 35px
+	&__items
+		flex-wrap: wrap
+		display: flex
+	&__item
+		margin-top: 20px
+		&:not(:last-child)
+			margin-right: 50px
+	&__icon
+		height: 31px
+		align-items: center
+		display: flex
+		color: $white
+		font-size: 30px
+		margin-bottom: 15px
+	&__name
+		+f(16px,800,1)
+		+ftitle
+		color: $white
+	&__footer
+		margin-top: 60px
+	&__blockquote
+		position: relative
+		margin-bottom: 30px
+		z-index: 1
+		+f(16px,800,1.5)
+		+ftitle
+		color: $white
+		&:before
+			position: absolute
+			content: ''
+			top: -40px
+			right: 20px
+			width: 94px
+			height: 94px
+			z-index: -1
+			background-image: url("data:image/svg+xml,%0A%3Csvg width='76px' height='59px' viewBox='0 0 76 59' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Group' fill='%23084793' fill-rule='nonzero'%3E%3Cpath d='M5.2,58.199995 C2.13333,49.8 0.6,41.4 0.6,33 C0.6,23.2667 3.13333,15.4 8.2,9.4 C13.4,3.26666 21,0.199995 31,0.199995 L31,14.4 C23.9333,14.4 20.4,19.1333 20.4,28.6 L20.4,31.199995 L33.8,31.199995 L33.8,58.199995 L5.2,58.199995 Z M46.6,58.199995 C43.5333,50.199995 42,41.8 42,33 C42,23.2667 44.5333,15.4 49.6,9.4 C54.8,3.26666 62.4,0.199995 72.4,0.199995 L72.4,14.4 C65.2,14.4 61.6,19.1333 61.6,28.6 L61.6,31.199995 L75.2,31.199995 L75.2,58.199995 L46.6,58.199995 Z' %3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+			background-repeat: no-repeat
+	&__author
+		margin-top: 30px
+	&__authorname
+		+f(16px,800,1.5)
+		+ftitle
+		color: $white
+	&__bottom
+		padding: 62px 0 0
+		.oneservice__row
+			+sm
+				flex-direction: column-reverse
+		.oneservice__left
+			justify-content: center
+			display: flex
+	&__fitnesscoach
+		max-width: 445px
+		margin-top: -520px
+		+sm
+			margin: 62px -37px 0
+
+.fitnesscoach
+	position: relative
+	display: block
+	max-width: 445px
+	&__img
+		height: 100%
+		img
+			max-width: 100%
+			display: block
+	&__wrap
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		padding: 70px 40px
+	&__arr
+		+arr(15,18,$white,r)
+		margin-bottom: 40px
+	&__name
+		+f(32px,800,1.5)
+		+ftitle
+		color: $white
+		&:not(:last-child)
+			margin-bottom: 30px
+	&__position
+		color: rgba($white, .5)

@@ -11,51 +11,544 @@
     <link rel="stylesheet" media="all" href="css/app.css">
   </head>
 
-  <body>
+  <body class="is-main">
     <!-- BEGIN content -->
     <div class="out">
-      <h1>Index page</h1>
-      <p>Hello from partials/_header.html</p>
-      <svg class="icon icon-facebook">
-        <use xlink:href="img/sprite.svg#icon-facebook"></use>
-      </svg>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="checkbox">
-          <span class="checkbox__text">checkbox</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="exemple-name" checked>
-          <span class="checkbox__text">checkbox-checked</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <!-- begin input -->
-      <label class="radio">
-        <input type="radio" name="exemple-name">
-        <span class="radio__text">text</span>
-      </label>
-      <!-- end input -->
-      <!-- begin breadcrumbs -->
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="#">Внутренняя</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <span>Корзина</span>
-        </li>
-      </ul>
-      <!-- end breadcrumbs -->
-      <li>Item1</li>
-      <li>Item2</li>
+      <!-- begin header -->
+      <div class="header js-header">
+        <div class="header__inner inner">
+          <a href="/" class="header__moblogo logo md-show">
+            <img src="./img/logo.png" alt="img">
+          </a>
+          <div class="header__top md-hide">
+            <div class="header__left">
+              <ul class="lang">
+                <li><a href="#">Français</a></li>
+                <li class="is-active"><a href="#">English</a></li>
+              </ul>
+            </div>
+            <div class="header__right">
+              <a href="tel:450-232-5742" class="phone header__item">450-232-5742</a>
+              <a href="#" class="btn-simple btn-simple_sm header__item">Write to us</a>
+              <a href="#" class="btn btn_sm header__item">Become a member</a>
+            </div>
+          </div>
+          <div class="header__bottom md-hide">
+            <div class="header__left">
+              <a href="/" class="logo">
+                <img src="./img/logo.png" alt="img">
+              </a>
+            </div>
+            <div class="header__right">
+              <ul class="header__menu menu">
+                <li class="menu__item is-active"><a href="#" class="menu__link">Services</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Coaches</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Testimonials</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+              </ul>
+              <ul class="header__menu menu">
+                <li class="menu__item"><a href="#" class="menu__link">Schedule & location</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="header__btn btn-menu js-btn-menu md-show">
+            <span class="btn-menu__line"></span>
+            <span class="btn-menu__line"></span>
+            <span class="btn-menu__line"></span>
+          </button>
+          <div class="header__mob">
+            <div class="header__mobwrap">
+              <div class="header__mobtop">
+                <div class="header__mobcol">
+                  <ul class="menu">
+                    <li class="menu__item is-active"><a href="#" class="menu__link">Services</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Coaches</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Testimonials</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="header__mobcol text-right">
+                  <ul class="lang">
+                    <li><a href="#">Français</a></li>
+                    <li class="is-active"><a href="#">English</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__mobmiddle">
+                <div class="header__mobrow">
+                  <div class="header__mobcol">
+                    <ul class="header__menu menu">
+                      <li class="menu__item"><a href="#" class="menu__link">Schedule <br>& location</a></li>
+                    </ul>
+                  </div>
+                  <div class="header__mobcol">
+                    <a href="tel:450-232-5742" class="phone">450-232-5742</a>
+                    <a href="#" class="btn-simple btn-simple_sm">Write to us</a>
+                  </div>
+                </div>
+                <div class="header__mobrow">
+                  <div class="header__mobcolcenter">
+                    <a href="#" class="btn btn_sm">Become a member</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__mobfooter">
+              <ul class="soc">
+                <li><a href="#">
+                    <svg class="icon icon-fb">
+                      <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    </svg>
+                  </a></li>
+                <li><a href="#">
+                    <svg class="icon icon-inst">
+                      <use xlink:href="img/sprite.svg#icon-inst"></use>
+                    </svg>
+                  </a></li>
+                <li><a href="#">
+                    <svg class="icon icon-youtube">
+                      <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end header -->
+      <!-- begin hero -->
+      <div class="hero js-slider-wrap">
+        <div class="hero__slider js-hero-slider">
+          <div class="hero__slide">
+            <div class="hero__bg">
+              <img src="./img/hero-slide.jpg" alt="img">
+            </div>
+            <div class="hero__inner-sm inner">
+              <h1 class="hero__titlelg titlelg"><span class="colorblue">Welcome</span>to Astrofit</h1>
+              <div class="hero__footer">
+                <a href="#" class="btn">Free training e-book</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slide">
+            <div class="hero__bg">
+              <img src="./img/hero-slide.jpg" alt="img">
+            </div>
+            <div class="hero__inner-sm inner">
+              <h1 class="hero__titlelg titlelg"><span class="colorblue">Welcome</span>to Astrofit</h1>
+              <div class="hero__footer">
+                <a href="#" class="btn">Free training e-book</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slide">
+            <div class="hero__bg">
+              <img src="./img/hero-slide.jpg" alt="img">
+            </div>
+            <div class="hero__inner-sm inner">
+              <h1 class="hero__titlelg titlelg"><span class="colorblue">Welcome</span>to Astrofit</h1>
+              <div class="hero__footer">
+                <a href="#" class="btn">Free training e-book</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slide">
+            <div class="hero__bg">
+              <img src="./img/hero-slide.jpg" alt="img">
+            </div>
+            <div class="hero__inner-sm inner">
+              <h1 class="hero__titlelg titlelg"><span class="colorblue">Welcome</span>to Astrofit</h1>
+              <div class="hero__footer">
+                <a href="#" class="btn">Free training e-book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__bottom">
+          <div class="hero__inner inner">
+            <div class="hero__counter js-slider-counter"></div>
+            <ul class="hero__soc soc">
+              <li><a href="#">
+                  <svg class="icon icon-fb">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="icon icon-inst">
+                    <use xlink:href="img/sprite.svg#icon-inst"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="icon icon-youtube">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end hero -->
+      <!-- begin packages -->
+      <div class="packages">
+        <div class="packages__inner inner">
+          <div class="packages__row row">
+            <div class="packages__col col">
+              <div class="packages__img"><img src="./img/packages-1.jpg" alt="img"></div>
+              <div class="packages__wrap">
+                <h3 class="packages__title titlesm">Privat training</h3>
+                <p>If you’re more of a lone wolf, our personal trainers will take good care of you during our private, one-on-one training sessions!</p>
+              </div>
+              <div class="packages__footer"><a href="#" class="packages__btn btn">Book</a><a href="#" class="btn btn_white packages__btnonhover">Book now</a></div>
+            </div>
+            <div class="packages__col col">
+              <div class="packages__img"><img src="./img/packages-2.jpg" alt="img"></div>
+              <div class="packages__wrap">
+                <h3 class="packages__title titlesm">Semi-privat training</h3>
+                <p>Our semi-private sessions will help you reach your goals in an environment that’s motivating and fun!</p>
+              </div>
+              <div class="packages__footer"><a href="#" class="packages__btn btn">Book</a><a href="#" class="btn btn_white packages__btnonhover">Book now</a></div>
+            </div>
+            <div class="packages__col col">
+              <div class="packages__img"><img src="./img/packages-3.jpg" alt="img"></div>
+              <div class="packages__wrap">
+                <h3 class="packages__title titlesm">Nutrition guidance</h3>
+                <p>Results start in the kitchen! Learn how to eat well for your goals, with or without a meal plan. Create a healthy lifestyle that brings you results, in the kitchen as well as in the gym!</p>
+              </div>
+              <div class="packages__footer"><a href="#" class="packages__btn btn">Book</a><a href="#" class="btn btn_white packages__btnonhover">Book now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end packages -->
+      <!-- begin coaches -->
+      <div class="coaches color-black">
+        <div class="coaches__inner inner">
+          <h2 class="coaches__titlesm titlesm text-center">Meet the officers</h2>
+          <div class="coaches__description text-center">If you want to be guided by the best team of coaches your are in the right place. They will help you to definite and reach your goal. Trust them and work hard! </div>
+          <div class="coaches__row row">
+            <div class="coaches__col col col-6 col-sm-12">
+              <a href="#" class="coach">
+                <span class="coach__img">
+                  <img src="./img/coach-1.png" alt="img">
+                </span>
+                <div class="coach__head">
+                  <h4 class="coach__title titlesm">Sarah Anton</h4>
+                  <div class="coach__position">Fitness coach & co-founder</div>
+                  <div class="coach__icon">
+                    <svg class="icon icon-inst">
+                      <use xlink:href="img/sprite.svg#icon-inst"></use>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="coaches__col col col-6 col-sm-12">
+              <a href="#" class="coach">
+                <span class="coach__img">
+                  <img src="./img/coach-2.png" alt="img">
+                </span>
+                <div class="coach__head">
+                  <h4 class="coach__title titlesm">Yahia Hikmat</h4>
+                  <div class="coach__position">Fitness coach & co-founder</div>
+                  <div class="coach__icon">
+                    <svg class="icon icon-inst">
+                      <use xlink:href="img/sprite.svg#icon-inst"></use>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end coaches -->
+      <!-- begin gen -->
+      <div class="gen">
+        <div class="gen__inner inner">
+          <div class="gen__row row">
+            <div class="gen__col col col-3 col-md-6 col-sm-12">
+              <div class="gen__container">
+                <div class="gen__bg">
+                  <img src="./img/gen-photo.jpg" alt="img">
+                </div>
+                <div class="gen__wrap">
+                  <div class="gen__icon"><img src="./img/gen-1.svg" alt="img"></div>
+                  <h4 class="gen__titlexs titlexs">We can motivated to stop</h4>
+                  <div class="gen__text">Your goals don’t stop for anyone! We’re here to keep you on the right track!</div>
+                </div>
+                <div class="gen__footer sm-hide">
+                  <a href="#" class="btn btn_white">Book now</a>
+                </div>
+              </div>
+            </div>
+            <div class="gen__col col col-3 col-md-6 col-sm-12">
+              <div class="gen__container">
+                <div class="gen__bg">
+                  <img src="./img/gen-photo.jpg" alt="img">
+                </div>
+                <div class="gen__wrap">
+                  <div class="gen__icon"><img src="./img/gen-2.svg" alt="img"></div>
+                  <h4 class="gen__titlexs titlexs">Use it or <br>loose it</h4>
+                  <div class="gen__text">It’s about doing something every day that brings you closer to your goals!</div>
+                </div>
+                <div class="gen__footer sm-hide">
+                  <a href="#" class="btn btn_white">Book now</a>
+                </div>
+              </div>
+            </div>
+            <div class="gen__col col col-3 col-md-6 col-sm-12">
+              <div class="gen__container">
+                <div class="gen__bg">
+                  <img src="./img/gen-photo.jpg" alt="img">
+                </div>
+                <div class="gen__wrap">
+                  <div class="gen__icon"><img src="./img/gen-3.svg" alt="img"></div>
+                  <h4 class="gen__titlexs titlexs">Push your <br>limits</h4>
+                  <div class="gen__text">Nothing incredible lies in the comfort zone. Let’s push limits together!</div>
+                </div>
+                <div class="gen__footer sm-hide">
+                  <a href="#" class="btn btn_white">Book now</a>
+                </div>
+              </div>
+            </div>
+            <div class="gen__col col col-3 col-md-6 col-sm-12">
+              <div class="gen__container">
+                <div class="gen__bg">
+                  <img src="./img/gen-photo.jpg" alt="img">
+                </div>
+                <div class="gen__wrap">
+                  <div class="gen__icon"><img src="./img/gen-4.svg" alt="img"></div>
+                  <h4 class="gen__titlexs titlexs">Confidence</h4>
+                  <p>Build your self confidence</p>
+                </div>
+                <div class="gen__footer sm-hide">
+                  <a href="#" class="btn btn_white">Book now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end gen -->
+      <!-- begin offers -->
+      <div class="offers md-hide">
+        <div class="offers__inner inner">
+          <h2 class="offers__title text-center titlesm">Choose the offer that suits you</h2>
+          <div class="offers__description text-center">Start your training and become a better version of yourself. NO EXCUSES!</div>
+          <div class="offers__row row">
+            <div class="offers__col col">
+              <div class="offers__img">
+                <img src="./img/offers-img.jpg" alt="img">
+              </div>
+              <div class="offers__wrap">
+                <h3 class="offers__titlesm titlesm">Privat <br>training</h3>
+                <div class="offers__text">Ask us</div>
+                <div class="offers__list">
+                  <li>Get a 100% personal training</li>
+                  <li>Get more results</li>
+                  <li>A daily contact with the coach</li>
+                  <li>Be ready to work hard</li>
+                  <li>Become the better of yourself</li>
+                </div>
+              </div>
+              <div class="offers__footer">
+                <a href="#" class="offers__btn btn">Book</a><a href="#" class="btn btn_white offers__btnonhover">Book now</a>
+              </div>
+            </div>
+            <div class="offers__col col">
+              <div class="offers__img">
+                <img src="./img/offers-img.jpg" alt="img">
+              </div>
+              <div class="offers__wrap">
+                <h3 class="offers__titlesm titlesm">Semi-privat <br>training</h3>
+                <div class="offers__text">Ask us</div>
+                <div class="offers__list">
+                  <li>Meet new people</li>
+                  <li>Train with your friends</li>
+                  <li>Get some fun together</li>
+                  <li>Work hard</li>
+                  <li>Progress together</li>
+                </div>
+              </div>
+              <div class="offers__footer">
+                <a href="#" class="offers__btn btn">Book</a><a href="#" class="btn btn_white offers__btnonhover">Book now</a>
+              </div>
+            </div>
+            <div class="offers__col col">
+              <div class="offers__img">
+                <img src="./img/offers-img.jpg" alt="img">
+              </div>
+              <div class="offers__wrap">
+                <h3 class="offers__titlesm titlesm">Nutrition <br>guidance</h3>
+                <div class="offers__text">Ask us</div>
+                <div class="offers__list">
+                  <li>Nutrition is 60% of results</li>
+                  <li>Learn good nutrition habits</li>
+                  <li>Eat healthy and tasty</li>
+                  <li>Say no to diet and yes to good long-term habits</li>
+                  <li>Become healthier</li>
+                </div>
+              </div>
+              <div class="offers__footer">
+                <a href="#" class="offers__btn btn">Book</a><a href="#" class="btn btn_white offers__btnonhover">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end offers -->
+      <!-- begin askform -->
+      <div class="ask">
+        <div class="ask__inner inner">
+          <div class="ask__row row">
+            <div class="ask__col col col-6 col-sm-12 color-black">
+              <h2 class="ask__title titlesm">Ask us anything</h2>
+              <div class="ask__description">For any questions or inquiries, please contact us. It would be a pleasure to help you. Looking forward to meet!</div>
+              <form class="ask__form form">
+                <div class="form__row">
+                  <div class="form__colname">
+                    <div class="field">
+                      <div class="input"><input type="text" placeholder="Name"></div>
+                    </div>
+                  </div>
+                  <div class="form__colemail">
+                    <div class="field">
+                      <div class="input"><input type="text" placeholder="Email"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="input"><input type="text" placeholder="Subject"></div>
+                </div>
+                <div class="field">
+                  <div class="textarea"><textarea placeholder="Message"></textarea></div>
+                </div>
+                <div class="form__footer">
+                  <button class="btn" type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+            <div class="ask__col col col-6 col-sm-12">
+              <div class="ask__schedule">
+                <h3 class="ask__title titlesm">Schedule</h3>
+                <div class="ask__rowsschedule row">
+                  <div class="ask__colschedule col col-6 col-sm-12">
+                    <div class="label">Monday - Thursday</div>
+                    <div class="ask__time titlesm">6AM - 10PM</div>
+                  </div>
+                  <div class="ask__colschedule col col-6 col-sm-12">
+                    <div class="label">Saturday</div>
+                    <div class="ask__time titlesm">8AM - 2PM</div>
+                  </div>
+                  <div class="ask__colschedule col col-6 col-sm-12">
+                    <div class="label">Friday</div>
+                    <div class="ask__time titlesm">6AM - 7PM</div>
+                  </div>
+                  <div class="ask__colschedule col col-6 col-sm-12">
+                    <div class="label">Sunday</div>
+                    <div class="ask__time titlesm">9AM - 1PM</div>
+                  </div>
+                </div>
+              </div>
+              <div class="ask__locations">
+                <div class="ask__title titlesm">Locations</div>
+                <div class="ask__rowscollocations row">
+                  <div class="ask__collocations col col-6 col-sm-12 sm-hide">
+                    <div class="town">100 rue Gaston-Dumoulin Ste101</div>
+                  </div>
+                  <div class="ask__collocations col col-6 col-sm-12">
+                    <div class="town">10190 Henri-Bourassa Est</div>
+                  </div>
+                  <div class="ask__collocations col col-6 col-sm-12">
+                    <div class="street">Blainville, <br>QC J7C 0A3</div>
+                  </div>
+                  <div class="ask__collocations sm-show col col-6 col-sm-12">
+                    <div class="town">10190 Henri-Bourassa Est</div>
+                  </div>
+                  <div class="ask__collocations col col-6 col-sm-12">
+                    <div class="street">Montreal, <br>Quebec H1C 1T1 </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end askform -->
+      <!-- begin footer -->
+      <div class="footer">
+        <div class="footer__inner inner">
+          <div class="footer__top">
+            <div class="footer__left">
+              <a href="#" class="logo">
+                <img src="./img/logo.png" alt="img">
+              </a>
+            </div>
+            <div class="footer__right">
+              <ul class="lang footer__item md-hide">
+                <li class="is-active"><a href="#">Français</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+              <a href="tel:450-232-5742" class="phone footer__item md-hide">450-232-5742</a>
+              <a href="#" class="btn-simple btn-simple_sm footer__item md-hide">Write to us</a>
+              <a href="#" class="btn btn_sm footer__item md-hide">Become a member</a>
+              <div class="md-show">
+                <ul class="footer__soc soc">
+                  <li><a href="#">
+                      <svg class="icon icon-fb">
+                        <use xlink:href="img/sprite.svg#icon-fb"></use>
+                      </svg>
+                    </a></li>
+                  <li><a href="#">
+                      <svg class="icon icon-inst">
+                        <use xlink:href="img/sprite.svg#icon-inst"></use>
+                      </svg>
+                    </a></li>
+                  <li><a href="#">
+                      <svg class="icon icon-youtube">
+                        <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                      </svg>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__middle md-hide">
+            <ul class="footer__menu menu">
+              <li class="menu__item is-active"><a href="#" class="menu__link">Menu</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Gym</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Coaches</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Testimonial</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copy copy">&copy; 2020 by AstrofitWorld</div>
+            <ul class="footer__soc soc md-hide">
+              <li><a href="#">
+                  <svg class="icon icon-fb">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="icon icon-inst">
+                    <use xlink:href="img/sprite.svg#icon-inst"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="icon icon-youtube">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a></li>
+            </ul>
+            <div class="footer__rights">All right reserved</div>
+          </div>
+        </div>
+      </div>
+      <!-- end footer -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

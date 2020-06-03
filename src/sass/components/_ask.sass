@@ -1,0 +1,101 @@
+.ask
+	&__col
+		position: relative
+		&:first-child
+			padding: 60px 70px 100px 15px
+			+sm
+				padding: 70px 0
+			&:before
+				position: absolute
+				content: ''
+				top: 0
+				right: 0
+				bottom: 0
+				left: -60vw
+				z-index: -1
+				background-color: $white
+				+sm
+					right: -37px
+		&:last-child
+			padding: 0 15px 0 0
+			flex-direction: column
+			justify-content: space-between
+			display: flex
+			+sm
+				padding: 0
+			&:before
+				position: absolute
+				content: ''
+				top: 0
+				left: 0
+				right: -60vw
+				bottom: 0
+				z-index: -1
+				background-color: #001D40
+				+sm
+					left: -37px
+	&__title
+		margin-bottom: 33px
+		+sm
+			margin-bottom: 20px
+	&__description
+		max-width: 364px
+	&__form
+		&:not(:first-child)
+			margin-top: 22px
+			+sm
+				margin-top: 32px
+	&__schedule
+		position: relative
+		padding: 60px 15px 100px 65px
+		+sm
+			padding: 70px 0
+		&_smorderfirst
+			+sm
+				order: -1
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			right: -60vw
+			bottom: 0
+			z-index: -1
+			background-color: #003370
+			+sm
+				left: -37px
+	&__rowsschedule
+		margin-top: -25px
+	&__colschedule
+		margin-top: 25px
+	&__locations
+		position: relative
+		padding: 70px 0 100px 65px
+		+sm
+			padding: 53px 0 63px
+	&__rowscollocations
+		margin-top: -20px
+	&__collocations
+		margin-top: 20px
+		+sm
+			margin-top: 40px
+		.street
+			+sm
+				margin-top: -20px
+	&__phone
+		margin-bottom: 10px
+		+tr(opacity)
+		vertical-align: top
+		display: block
+		+hover
+			opacity: .7
+	&__email
+		color: $blue
+		+tr(color)
+		display: block
+		+hover
+			color: $white
+	&__soc
+		margin-top: 92px
+		+sm
+			margin-top: 118px

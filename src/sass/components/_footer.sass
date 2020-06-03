@@ -1,0 +1,48 @@
+.footer
+	padding: 70px 0 100px
+	+md
+		padding: 70px 0
+	.logo
+		width: 138px
+	&__top
+		padding-bottom: 70px
+		justify-content: space-between
+		align-items: center
+		display: flex
+		+md
+			padding-bottom: 20px
+	&__item
+		&:not(:last-child)
+			margin-right: 40px
+	&__left
+		padding-right: 15px
+	&__right
+		flex-wrap: wrap
+		align-items: center
+		display: flex
+	&__middle
+		padding-bottom: 30px
+	&__menu
+		justify-content: space-between
+		.menu__item
+			&.is-active
+				a
+					&:before
+						display: none
+	&__bottom
+		padding-top: 30px
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+		display: flex
+		border-top: 1px solid rgba($white, .2)
+	&__rights
+		margin-left: 15px
+	&__soc
+		+md
+			li
+				&:not(:last-child)
+					margin-right: 20px
+
+.copy
+	margin-right: 15px

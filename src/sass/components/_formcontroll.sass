@@ -1,0 +1,50 @@
+.form
+	&__row
+		margin: 0 -10px
+		display: flex
+		+sm
+			flex-wrap: wrap
+		&:not(:last-child)
+			margin-bottom: 20px
+	&__colname
+		padding: 0 10px
+		width: 30%
+		min-width: 100px
+		flex-shrink: 0
+		+sm
+			width: 100%
+			margin-bottom: 20px
+	&__colemail
+		padding: 0 10px
+		flex-grow: 1
+	&__footer
+		margin-top: 30px
+		+sm
+			margin-top: 40px
+.field
+	&:not(:last-child)
+		margin-bottom: 20px
+.input,
+.textarea
+	position: relative
+	input,
+	textarea
+		padding: 18px 15px
+		width: 100%
+		color: $black
+		+ftitle
+		+f(16px,800,1.5)
+		background-color: #F9F9F9
+		display: block
+		&::placeholder
+			color: rgba($black, .2)
+		&:focus
+			&::placeholder
+				font-size: 0
+
+.textarea
+	textarea
+		outline: none
+		height: 215px
+		resize: none
+		border: none

@@ -2,4 +2,18 @@ ProjectTitle: template
 
 PageList:
 - file: page.html
-  ready: 50
+  ready: 100
+- file: services.html
+  ready: 100
+- file: one-service.html
+  ready: 100
+- file: coaches-info.html
+  ready: 100
+- file: testimonial.html
+  ready: 100
+- file: blog.html
+  ready: 100
+- file: post.html
+  ready: 100
+- file: contacts.html
+  ready: 100

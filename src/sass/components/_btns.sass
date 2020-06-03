@@ -1,0 +1,36 @@
+.btn,
+.btn-simple
+	padding: 18px 31px
+	+ftitle
+	+f(16px,700,1.5)
+	letter-spacing: 0.1em
+	+tr(color,background-color)
+	display: inline-block
+	vertical-align: top
+	&_sm
+		padding: 8px 22px
+		letter-spacing: 0
+		font-weight: 800
+
+.btn
+	color: $white
+	background-color: $blue
+	&:not(.btn_sm)
+		text-transform: uppercase
+	+hover
+		color: $blue
+		background-color: #F9F9F9
+	&_white
+		color: $blue
+		background-color: $white
+		+hover
+			background-color: #F9F9F9
+
+.btn-simple
+	padding-left: 0
+	padding-right: 0
+	color: $blue
+	+md
+		padding: 0
+	+hover
+		color: $white

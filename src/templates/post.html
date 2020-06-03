@@ -1,0 +1,100 @@
+---
+title: Post
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	<div class="whitewrap color-black">
+		<div class="inner">
+			<article class="article">
+				<div class="date">MAY 5, 2020</div>
+				<h1>Comment améliorer sa posture pour le travail <br>de bureau?</h1>
+				<div class="article__description">Written by Editor in <a href="#">how-to, science, tips</a></div>
+				<img class="img-lg" src="./img/article-img-lg.jpg" alt="img">
+				<p>Beaucoup d’entre vous travaillez à temps plein, sur une chaise, dans un bureau.  Tous les  matins, vous vous dites: il faudrait vraiment que je commence à faire de l’exercice pour renforcer mon cou et avoir une meilleur posture. Je suis déjà passé par là. Pendant 3 ans, j’ai travaillé comme programmeur dans un bureau informatique et pendant plus de 10 ans, j’ai joué aux jeux vidéos sur l’ordinateur. Alors, disons que ma posture, mon dos, mes épaules et mon cou en ont pris un coup. Avec le temps, l’entraînement et les exercices d’étirements, j’ai réussi à complètement guérir ce mal. Bien sûr, devenant un entraîneur, j’ai eu la chance d’avoir les connaissances nécessaires pour y arriver.</p>
+				<p>De la même façon que le mal s’est installé, la réparation se fera sur une longue durée. Ce n’est pas du jour au lendemain que tout va être redevenu à la normale. Il faut être patient et consistant pour que la magie opère. Plus vous attendez pour commencer, plus le processus sera long. Arrêtez de trouver des excuses pour ne pas prendre soin de votre corps. Votre corps à besoin d’être à son meilleur pour être le plus performant.</p>
+				<p>Si vous souhaitez avoir le plus de force possible dans vos entraînements, il est primordial de corriger votre posture pour éviter les blessures à court et à long terme.</p>
+				<h2>Comment savoir si j’ai une mauvaise posture ?</h2>
+				<p>Commencez par prendre une photo de votre corps. Regardez ensuite si vous avez l’un des problèmes ci-dessous. En premier, regardez si vous avez une antéversion ou une rétroversion du bassin.</p>
+				<img src="./img/article-img.jpg" alt="img">
+				<h4 class="colorblue">Étape 1: </h4>
+				<p>La première étape consiste à corriger la source du problème. Il faut d’abord corriger son environnement de travail pour qu’il soit le plus ergonomique possible. Voici une liste ordonnée des critères à respecter:</p>
+				<ul>
+					<li>La tête ne doit pas être inclinée.</li>
+					<li>Le niveau des yeux doit être égal au niveau le plus haut de l’écran.</li>
+					<li>Avoir le dos soutenu par un dossier (lorsqu’on est assis)</li>
+					<li>Les épaules doivent être détendues.</li>
+					<li>Les coudes doivent former un angle de 90-degrés chacun. </li>
+					<li>Les poignets doivent être droits, donc pas inclinés.</li>
+					<li>Les fesses sont bien au fond de la chaise.</li>
+					<li>Les hanches sont bien droites et parallèles.</li>
+					<li>Les genoux doivent former un angle de 90-degrés chacun.</li>
+					<li>Les deux pieds doivent toucher au sol. </li>
+				</ul>
+				<div class="article__categories">
+					<a href="#" class="category">FRANCAIS</a>
+					<a href="#" class="category">POSTURE</a>
+					<a href="#" class="category">TRAVAIL</a>
+				</div>
+				<div class="article__footer">
+					<div class="article__prev">
+						<div class="article__info">Previos post</div>
+						<a href="#" class="article__link">Should You Workout in the Morning <br>or Evening</a>
+					</div>
+					<div class="article__next">
+						<div class="article__info">Next post</div>
+						<a href="#" class="article__link">The Importance of <br>Rest Days</a>
+					</div>
+				</div>
+			</article>
+			<div class="blog">
+				<div class="blog__row row">
+					<div class="blog__col col col-4 col-sm-12">
+						<div class="card">
+							<div class="card__img">
+								<img src="./img/card-img-3.jpg" alt="img">
+							</div>
+							<a href="#" class="card__titlesm titlesm">The Importance of Rest Days</a>
+							<div class="card__tags">
+								<a href="#" class="tag">FEATURES</a>
+							</div>
+							<p>As athletes, we like pushing our limits every day; whether that means jumping a little higher or running a little longer, we like feeling accomplished athletically at the end of the day. We are also very competitive.</p>
+						</div>
+					</div>
+					<div class="blog__col col col-4 col-sm-12">
+						<div class="card">
+							<div class="card__img">
+								<img src="./img/card-img-4.jpg" alt="img">
+							</div>
+							<a href="#" class="card__titlesm titlesm">Comment améliorer sa posture pour le travail de bureau?</a>
+							<div class="card__tags">
+								<a href="#" class="tag">HOW-TO</a>,
+								<a href="#" class="tag">SCIENCE</a>,
+								<a href="#" class="tag">TIPS</a>
+							</div>
+							<p>Beaucoup d’entre vous travaillez à temps plein, sur une chaise, dans un bureau.  Tous les  matins, vous vous dites: il faudrait vraiment que je commence à faire de l’exercice pour renforcer mon cou et avoir une meilleur posture.</p>
+						</div>
+					</div>
+					<div class="blog__col col col-4 col-sm-12">
+						<div class="card">
+							<div class="card__img">
+								<img src="./img/card-img-5.jpg" alt="img">
+							</div>
+							<a href="#" class="card__titlesm titlesm">Should You Workout in the Morning or Evening</a>
+							<div class="card__tags">
+								<a href="#" class="tag">SCIENCE</a>,
+								<a href="#" class="tag">TIPS</a>
+							</div>
+							<p>There is a lot of debate on when is the right time to workout: morning workout or evening workout? The ones who’ve already benefitted from the early morning workouts are keen to say that 6AM workouts are best.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include "partials/_askform.html" %}
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

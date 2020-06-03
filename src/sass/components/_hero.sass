@@ -1,0 +1,109 @@
+.hero
+	position: relative
+	padding-top: 80px
+	margin: 0 auto
+	max-width: 1440px
+	+md
+		padding-top: 100px
+	&__slider
+		opacity: 0
+		visibility: hidden
+		&.slick-initialized
+			opacity: 1
+			visibility: visible
+		.slick-dots
+			position: relative
+			margin: -124px auto 0
+			padding-bottom: 101px
+			max-width: 732px
+			z-index: 3
+			flex-wrap: wrap
+			align-items: center
+			display: flex
+			+md
+				margin: 0
+				padding: 30px 37px
+				max-width: 100%
+				justify-content: center
+			li
+				&.slick-active 
+					button
+						border-color: $white
+						&:before
+							background-color: $white
+				&:not(:last-child)
+					margin-right: 14px
+			button
+				position: relative
+				font-size: 0
+				+circle(23)
+				border: 1px solid transparent
+				+tr(border-color)
+				background-color: transparent
+				display: block
+				+hover
+					border-color: $white
+					&:before
+						background-color: $white
+				&:before
+					position: absolute
+					content: ''
+					top: 8px
+					left: 8px
+					+circle(5)
+					+tr(background-color)
+					background-color: rgba($white, .5)
+					li.slick-active &
+						background-color: $white
+	&__slide
+		position: relative
+		padding: 230px 0 170px
+		height: calc(100vh - 80px)
+		min-height: 670px
+		+md
+			padding: 60px 0 15px
+			display: flex !important
+			align-items: center
+			min-height: 370px
+			height: calc(100vh - 100px)
+	&__bg
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		opacity: .5
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			object-position: center
+			display: block
+	&__inner-sm
+		position: relative
+		margin: 0 auto
+		padding: 0
+		width: 100%
+		max-width: 732px
+		z-index: 1
+	&__titlelg
+		margin-bottom: 60px
+		+md
+			margin-bottom: 30px
+	&__bottom
+		position: absolute
+		bottom: 100px
+		left: 0
+		width: 100%
+		z-index: 2
+		+md
+			display: none
+		.hero__inner
+			justify-content: space-between
+			display: flex
+	&__counter
+		+f(16px,800,1.5)
+		color: $white
+		+ftitle
+		span
+			opacity: .5
