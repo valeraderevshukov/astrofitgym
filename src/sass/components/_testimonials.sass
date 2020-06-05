@@ -8,22 +8,18 @@
 			margin-left: -20px
 			margin-right: -20px
 			margin-bottom: 70px
-	&__out
-		padding-left: 95px
-		+md
-			padding-left: 0
 	&__inner
 		max-width: 1015px
 	&__colleft
 		position: relative
 		z-index: 4
 		padding: 0 15px
-		width: 40%
+		width: 45%
 		+sm
 			width: 100%
 	&__colright
 		padding: 0 15px
-		width: 60%
+		width: 55%
 		+sm
 			width: 100%
 	&__titlesm
@@ -62,13 +58,18 @@
 				left: 0
 	&__slide
 		position: relative
-		padding: 75px 0 75px 95px
+		padding: 75px 0
 		width: 100%
 		+md
 			padding-right: 15px
 			padding-left: 15px
 		+sm
 			padding: 0 0 65px
+		.testimonials__colleft
+			padding-right: 0
+			padding-left: 30px
+			+sm
+				padding-left: 0
 	&__siideinner
 		margin: 0 -15px
 		display: flex
@@ -76,8 +77,9 @@
 			flex-direction: column
 	&__img
 		max-width: 285px
+		margin: 0 auto
 		+sm
-			margin: 0 0
+			margin: 0
 			max-width: 100%
 			text-align: center
 			font-size: 0
@@ -89,7 +91,7 @@
 	&__content,
 	&__colright
 		padding: 0 15px
-		width: 60%
+		width: 55%
 		+sm
 			width: 100%
 	&__contentinner
@@ -117,6 +119,8 @@
 			z-index: -1
 			background-image: url("data:image/svg+xml,%0A%3Csvg width='76px' height='59px' viewBox='0 0 76 59' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Group' fill='%23084793' fill-rule='nonzero'%3E%3Cpath d='M5.2,58.199995 C2.13333,49.8 0.6,41.4 0.6,33 C0.6,23.2667 3.13333,15.4 8.2,9.4 C13.4,3.26666 21,0.199995 31,0.199995 L31,14.4 C23.9333,14.4 20.4,19.1333 20.4,28.6 L20.4,31.199995 L33.8,31.199995 L33.8,58.199995 L5.2,58.199995 Z M46.6,58.199995 C43.5333,50.199995 42,41.8 42,33 C42,23.2667 44.5333,15.4 49.6,9.4 C54.8,3.26666 62.4,0.199995 72.4,0.199995 L72.4,14.4 C65.2,14.4 61.6,19.1333 61.6,28.6 L61.6,31.199995 L75.2,31.199995 L75.2,58.199995 L46.6,58.199995 Z' %3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
 			background-repeat: no-repeat
+	&__text
+		max-width: 350px
 	&__tagline
 		margin-bottom: 20px
 		+f(16px,800,1.5)
