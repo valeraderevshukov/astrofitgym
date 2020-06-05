@@ -26,7 +26,6 @@
 		width: 60%
 		+sm
 			width: 100%
-	&__row
 	&__titlesm
 		max-width: 321px
 	&__footer
@@ -54,7 +53,7 @@
 			position: absolute
 			content: ''
 			top: 0
-			left: 95px
+			left: 0
 			right: 0
 			bottom: 0
 			z-index: -1
@@ -67,6 +66,7 @@
 		width: 100%
 		+md
 			padding-right: 15px
+			padding-left: 15px
 		+sm
 			padding: 0 0 65px
 	&__siideinner
@@ -75,8 +75,7 @@
 		+sm
 			flex-direction: column
 	&__img
-		max-width: 380px
-		margin-left: -95px
+		max-width: 285px
 		+sm
 			margin: 0 0
 			max-width: 100%
@@ -84,6 +83,7 @@
 			display: flex
 		img
 			max-width: 100%
+			height: auto !important
 			display: block
 	&__content,
 	&__colright
