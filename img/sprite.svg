@@ -22,6 +22,9 @@
         <path d="M17.49 5.75a.719.719 0 0 1-.719-.719V.72a.719.719 0 0 1 1.438 0V5.03a.719.719 0 0 1-.72.719z"/>
     </g>
     
+</symbol><symbol id="icon-close" viewBox="0 0 20 20">
+    <path d="M0 17.857L17.857 0 20 2.142 2.142 20z"/>
+    <path d="M17.857 20L0 2.143 2.143 0 20 17.858z"/>
 </symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
