@@ -15,7 +15,6 @@ import { OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN } from './../constants';
       modal.addClass(OPEN);
       controls.removeClass(ACTIVE);
       control.addClass(ACTIVE);
-      $('html').addClass(OVERFLOW_HIDDEN);
     });
   });
 
@@ -25,7 +24,6 @@ import { OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN } from './../constants';
     const close = modal.find('[data-modal-close]');
     const hide = () => {
       modal.removeClass(OPEN);
-      $('html').removeClass(OVERFLOW_HIDDEN);
     };
 
     BODY.on('click', e => {
@@ -48,7 +46,6 @@ import { OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN } from './../constants';
 
 setTimeout(() => {
   $('[data-modal="download-modal"]').addClass(OPEN);
-  $('html').addClass(OVERFLOW_HIDDEN);
 }, 20000);
 // ----------------------  HTML EXEMPLE ---------------------
 // <a href="#" data-modal-control="modalname"></a> ---- trigger
