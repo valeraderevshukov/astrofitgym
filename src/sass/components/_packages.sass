@@ -4,11 +4,13 @@
 			padding: 0
 	&__row
 		counter-reset: list
+		margin: 0 
 		+md
 			margin: 0
 	&__col
 		position: relative
-		padding: 60px 80px 100px
+		width: 33.3%
+		padding: 60px 50px 100px
 		justify-content: space-between
 		flex-direction: column
 		display: flex
@@ -24,38 +26,8 @@
 				opacity: 1
 				visibility: visible
 			.packages__img
+				opacity: 1
 				background-color: $blue
-		&:first-child
-			width: 31.835%
-			padding-left: 15px
-			padding-right: 95px
-			+md
-				padding: 70px 37px
-				width: 33.3%
-			+sm
-				width: 100%
-			.packages__img
-				left: -150px
-				+md
-					left: -37px
-		&:nth-child(2)
-			width: 36.33%
-			width: 33.3%
-			+sm
-				width: 100%
-		&:last-child
-			width: 31.835%
-			padding-right: 15px
-			padding-left: 95px
-			+md
-				padding: 70px 37px
-				width: 33.3%
-			+sm
-				width: 100%
-			.packages__img
-				right: -150px
-				+md
-					right: -37px
 		
 	&__btn
 		+tr(opacity,visibility)
@@ -73,7 +45,8 @@
 		left: 0
 		right: 0
 		bottom: 0
-		+tr(background-color)
+		opacity: 0
+		+tr(background-color, opacity)
 		img
 			width: 100%
 			height: 100%

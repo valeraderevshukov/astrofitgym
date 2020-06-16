@@ -2,7 +2,6 @@
 	position: relative
 	padding-top: 80px
 	margin: 0 auto
-	max-width: 1440px
 	+md
 		padding-top: 100px
 	&__slider
@@ -58,14 +57,14 @@
 	&__slide
 		position: relative
 		padding: 230px 0 170px
-		height: calc(100vh - 80px)
-		min-height: 670px
+		min-height: 800px
 		+md
 			padding: 60px 0 15px
 			display: flex !important
+			min-height: 600px
 			align-items: center
+		+sm
 			min-height: 370px
-			height: calc(100vh - 100px)
 	&__bg
 		position: absolute
 		top: 0

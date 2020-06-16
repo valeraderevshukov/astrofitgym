@@ -30,6 +30,11 @@
 .input,
 .textarea
 	position: relative
+	&.is-error
+		input,
+		textarea
+			border: 1px solid #FF6523
+
 	input,
 	textarea
 		padding: 18px 15px
@@ -44,6 +49,11 @@
 		&:focus
 			&::placeholder
 				font-size: 0
+.error-text
+	margin-top: 10px
+	+ftitle
+	+f(12px,400,1.5)
+	color: #FF6523
 
 .textarea
 	textarea
@@ -51,3 +61,14 @@
 		height: 215px
 		resize: none
 		border: none
+
+.form-success
+	letter-spacing: 0.1em
+	color: #089316
+	text-transform: uppercase
+	+ftitle
+	+f(16px,700,1.5)
+	align-items: center
+	display: flex
+	svg
+		margin-right: 10px

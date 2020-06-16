@@ -3,6 +3,10 @@ ProjectTitle: template
 PageList:
 - file: page.html
   ready: 100
+- file: popup-error.html
+  ready: 100
+- file: popup-success.html
+  ready: 100
 - file: services.html
   ready: 100
 - file: one-service.html

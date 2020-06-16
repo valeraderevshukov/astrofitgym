@@ -56,8 +56,7 @@ const initSlider = (prop) => {
     });
 
     
-
-    slider.slick(prop.options ? { ...prop.options, ...options } : options);
+    slider.slick(prop.options ? { ...options, ...prop.options } : options);
   });
 };
 

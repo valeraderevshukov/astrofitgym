@@ -1,0 +1,49 @@
+---
+title: Index page
+bodyClass: is-main
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	{% include "partials/_hero.html" %}
+	{% include "partials/_packages.html" %}
+	{% include "partials/_coaches.html" %}
+	{% include "partials/_gen.html" %}
+	{% include "partials/_offers.html" %}
+	{% include "partials/_askform.html" %}
+	{% include "partials/_footer.html" %}
+	
+    <div class="modal color-black is-open" data-modal="download-modal">
+      <div class="modal__container" data-modal-container>
+        <div class="modal__inner">
+          <button class="modal__close" data-modal-close>
+            {{mixins.icon('close')}}
+          </button>
+          <form class="form">
+            <h2 class="form__title titlesm">Download your free ebook</h2>
+            <div class="field">
+              <div class="input"><input type="text" placeholder="Name"></div>
+            </div>
+            <div class="field">
+              <div class="input">
+                <input type="text" placeholder="Email">
+              </div>
+            </div>
+            <div class="form__footer">
+              <div class="form-success">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="25" height="25" rx="2" fill="#089316"/>
+                  <line x1="6.06066" y1="10.9393" x2="12.0607" y2="16.9393" stroke="white" stroke-width="3"/>
+                  <line x1="19.0607" y1="8.06066" x2="10.0607" y2="17.0607" stroke="white" stroke-width="3"/>
+                </svg>
+                Message successfully sent
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

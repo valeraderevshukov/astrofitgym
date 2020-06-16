@@ -1,0 +1,43 @@
+---
+title: Index page
+bodyClass: is-main
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	{% include "partials/_hero.html" %}
+	{% include "partials/_packages.html" %}
+	{% include "partials/_coaches.html" %}
+	{% include "partials/_gen.html" %}
+	{% include "partials/_offers.html" %}
+	{% include "partials/_askform.html" %}
+	{% include "partials/_footer.html" %}
+	
+    <div class="modal color-black is-open" data-modal="download-modal">
+      <div class="modal__container" data-modal-container>
+        <div class="modal__inner">
+          <button class="modal__close" data-modal-close>
+            {{mixins.icon('close')}}
+          </button>
+          <form class="form">
+            <h2 class="form__title titlesm">Download your free ebook</h2>
+            <div class="field">
+              <div class="input"><input type="text" placeholder="Name"></div>
+            </div>
+            <div class="field">
+              <div class="input is-error">
+                <input type="text" placeholder="Email">
+                <div class="error-text">Oh my, it doesn't look like an email address :(</div>
+              </div>
+            </div>
+            <div class="form__footer">
+              <button disabled class="btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

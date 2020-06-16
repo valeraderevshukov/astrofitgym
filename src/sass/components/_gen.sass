@@ -1,14 +1,19 @@
 .gen
-	padding: 70px 0 80px
+	padding: 20px 0
 	+sm
 		padding: 70px 0
 	&__col
 		&:not(:last-child)
 			+sm
 				margin-bottom: 70px
+		&.is-active
+			.gen__footer,
+			.gen__bg
+				opacity: 1
+				visibility: visible
 	&__container
 		position: relative
-		padding: 70px 20px 100px
+		padding: 50px 20px 58px
 		height: 100%
 		justify-content: space-between
 		flex-direction: column
@@ -23,8 +28,8 @@
 	&__bg
 		position: absolute
 		top: 0
-		left: -15px
-		right: -15px
+		left: 0
+		right: 0
 		height: 100%
 		background-color: $blue
 		opacity: 0

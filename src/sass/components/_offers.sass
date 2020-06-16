@@ -3,25 +3,20 @@
 		margin-bottom: 20px
 	&__row
 		position: relative
+		margin: 0
 		counter-reset: list
-		&:before
-			position: absolute
-			content: ''
-			top: -1px
-			left: -150px
-			right: -150px
-			border-top: 1px solid rgba($white, .1)
 		&:not(:first-child)
 			margin-top: 70px
 	&__col
 		position: relative
-		padding: 60px 80px 100px
+		padding: 44px 50px 100px
+		width: 33.3%
 		justify-content: space-between
 		flex-direction: column
 		display: flex
-		+md
+		+sm
 			padding: 70px 37px
-			width: 33.3%
+			width: 100%
 		+hover
 			.offers__btn
 				opacity: 0
@@ -32,42 +27,6 @@
 			.offers__img
 				opacity: 1
 				visibility: visible
-		&:not(:first-child)
-			border-left: 1px solid rgba($white, .1)
-			+sm
-				border: none
-		&:first-child
-			width: 31.835%
-			padding-left: 15px
-			padding-right: 95px
-			+md
-				padding: 70px 37px
-				width: 33.3%
-			+sm
-				width: 100%
-			.offers__img
-				left: -150px
-				+md
-					left: -37px
-		&:nth-child(2)
-			width: 36.33%
-			+md
-				width: 33.3%
-			+sm
-				width: 100%
-		&:last-child
-			width: 31.835%
-			padding-right: 15px
-			padding-left: 95px
-			+md
-				padding: 70px 37px
-				width: 33.3%
-			+sm
-				width: 100%
-			.offers__img
-				right: -150px
-				+md
-					right: -37px
 	&__wrap
 		position: relative
 		z-index: 2
