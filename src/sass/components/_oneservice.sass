@@ -101,10 +101,20 @@
 	position: relative
 	display: block
 	max-width: 445px
+	&_w100
+		max-width: 100%
+		width: 100%
+		.fitnesscoach
+			&__img
+				max-height: 600px
+				img
+					height: 100%
+					object-fit: cover
+					object-position: center
 	&__img
 		height: 100%
 		img
-			max-width: 100%
+			width: 100%
 			display: block
 	&__wrap
 		position: absolute
